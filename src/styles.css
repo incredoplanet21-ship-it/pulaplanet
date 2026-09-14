@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-bg: #f3efe6;
+  --color-bg-elevated: #ebe6db;
+  --color-surface: #e4ddd0;
+  --color-paper: #faf7f0;
+  --color-ink: #1a1814;
+  --color-fg: #1a1814;
+  --color-muted: #6f6a62;
+  --color-subtle: #8a8478;
+  --color-border: #d4cdc0;
+  --color-accent: #3d5c52;
+  --color-accent-fg: #f3efe6;
+  --color-accent-soft: #dce6e1;
+  --color-unclean: #8f5348;
+  --color-unclean-soft: #ead9d4;
+  --color-clean: #3e6a5c;
+  --color-clean-soft: #d5e4dd;
+  --color-chill: #3d5a6e;
+  --color-chill-soft: #d4dde4;
+  --color-effluent: #6a6b45;
+  --color-effluent-soft: #e2e2d0;
+  --color-service: #5c5852;
+  --color-admin: #6b5a48;
+  --color-ok: #3e6a5c;
+  --color-ok-soft: #d5e4dd;
+  --color-warn: #7a6234;
+  --color-warn-soft: #efe4cc;
+  --color-fault: #8f5348;
+  --color-fault-soft: #ead9d4;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  --shadow-border:
+    0px 0px 0px 1px rgb(26 24 20 / 0.06),
+    0px 1px 2px -1px rgb(26 24 20 / 0.06),
+    0px 2px 4px 0px rgb(26 24 20 / 0.04);
+  --shadow-border-hover:
+    0px 0px 0px 1px rgb(26 24 20 / 0.1),
+    0px 1px 2px -1px rgb(26 24 20 / 0.08),
+    0px 4px 12px 0px rgb(26 24 20 / 0.06);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  img {
+    outline: 1px solid rgb(26 24 20 / 0.1);
+    outline-offset: -1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
