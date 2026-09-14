@@ -19,6 +19,7 @@
 # Scripts
 *.sh text eol=lf
 startup.sh text eol=lf
+.githooks/* text eol=lf
 
 # Windows scripts if added later
 *.bat text eol=crlf
