@@ -1,0 +1,43 @@
+# Default: LF in the repo, native checkout
+* text=auto eol=lf
+
+# Source
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.mts text eol=lf
+*.css text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.svg text eol=lf
+*.sql text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Scripts
+*.sh text eol=lf
+startup.sh text eol=lf
+
+# Windows scripts if added later
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.mp4 binary
+
+# Generated / vendored (keep in repo, hide from Linguist stats)
+src/routeTree.gen.ts linguist-generated=true
+package-lock.json linguist-generated=true
