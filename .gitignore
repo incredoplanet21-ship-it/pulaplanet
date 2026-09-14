@@ -1,35 +1,45 @@
+# dependencies
 node_modules/
-.project_id
-.github_repo
+
+# env & secrets
 .env
 .env.*
-.grok/
-.vercel/
-.tanstack/
-artifacts/
-screenshots/
-attachments/
-.node_modules.lock
-AGENTS.md
-public/__grok/
+!.env.example
+*.local
+
+# build / cache
 dist/
 .output/
 .nitro/
 .wrangler/
-*.local
-.DS_Store
-.grok/
-.vercel/
 .tanstack/
+.vercel/
+*.tsbuildinfo
+
+# logs & OS
+logs/
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# test / coverage
+coverage/
+playwright-report/
+test-results/
+
+# editor
+.vscode/
+.idea/
+*.swp
+
+# sandbox / local-only
+.project_id
+.github_repo
+.node_modules.lock
+.grok/
 artifacts/
 screenshots/
 attachments/
-.node_modules.lock
 AGENTS.md
 public/__grok/
-dist/
-.output/
-.nitro/
-.wrangler/
-*.local
-.DS_Store
